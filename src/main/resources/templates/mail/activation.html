@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- 添加viewport元标签 -->
+		<link rel="icon" href="https://static.nowcoder.com/images/logo_87_87.png"/>
+		<title>黑子论坛-激活账号</title>
+		<style>
+			/* 基本样式，适用于所有屏幕尺寸 */
+			body {
+				background-color: #f0f0f0;
+				font-family: Arial, sans-serif;
+				margin: 0; /* 去除默认的外边距 */
+			}
+
+			/* 大屏幕样式 */
+			@media screen and (min-width: 768px) {
+				div {
+					width: 50%; /* 在大屏幕上将内容区域宽度设为50% */
+					margin: 0 auto; /* 水平居中 */
+				}
+			}
+
+			/* 小屏幕样式 */
+			@media screen and (max-width: 767px) {
+				div {
+					padding: 10px; /* 在小屏幕上减少内边距 */
+				}
+			}
+
+			/* 其他样式和之前示例中的样式保持一致 */
+			b {
+				font-size: 24px;
+				color: #ff6600;
+			}
+
+			a {
+				text-decoration: none;
+				color: #0078d4;
+			}
+
+			a:hover {
+				color: #0056b3;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;练习时长已达两年半的个人练习生<span th:text="${username}">，你好（）！</span>!</b>
+			</p>
+			<p>
+				您正在申请加入IKUN家族，这是一个专属通道，请点击
+				<a th:href="${url}">此处IKUN专属通道</a>,
+				激活IKUN账号
+			</p>
+			<p>加入IKUN家族前，请确保阁下精通唱、跳、rap、篮球，会铁山靠者优先考虑</p>
+		</div>
+	</body>
+</html>
